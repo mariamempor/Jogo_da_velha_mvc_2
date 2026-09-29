@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jogo da Velha acessível, responsivo e totalmente offline."
+    />
+    <title>Jogo da Velha | Máquina do Tempo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-card" aria-labelledby="game-title">
+        <header class="game-header">
+          <p class="eyebrow">Clássico, acessível e offline</p>
+          <h1 id="game-title">Jogo da Velha</h1>
+          <p class="subtitle">Planeje sua estratégia e reveja cada decisão.</p>
+        </header>
+
+        <section class="scoreboard" aria-label="Placar da partida">
+          <article class="score score-x" aria-label="Vitórias do jogador X">
+            <span class="score-label">Vitórias X</span>
+            <strong id="score-x" class="score-value">0</strong>
+          </article>
+          <article class="score score-draw" aria-label="Quantidade de empates">
+            <span class="score-label">Empates</span>
+            <strong id="score-draw" class="score-value">0</strong>
+          </article>
+          <article class="score score-o" aria-label="Vitórias do jogador O">
+            <span class="score-label">Vitórias O</span>
+            <strong id="score-o" class="score-value">0</strong>
+          </article>
+        </section>
+
+        <p id="game-status" class="status" role="status" aria-live="polite">
+          Vez do jogador X.
+        </p>
+
+        <section class="board-section" aria-label="Tabuleiro do jogo">
+          <div id="game-board" class="board" role="group" aria-label="Casas do tabuleiro">
+            <button class="cell" type="button" data-index="0" aria-label="Linha 1, coluna 1, vazia"></button>
+            <button class="cell" type="button" data-index="1" aria-label="Linha 1, coluna 2, vazia"></button>
+            <button class="cell" type="button" data-index="2" aria-label="Linha 1, coluna 3, vazia"></button>
+            <button class="cell" type="button" data-index="3" aria-label="Linha 2, coluna 1, vazia"></button>
+            <button class="cell" type="button" data-index="4" aria-label="Linha 2, coluna 2, vazia"></button>
+            <button class="cell" type="button" data-index="5" aria-label="Linha 2, coluna 3, vazia"></button>
+            <button class="cell" type="button" data-index="6" aria-label="Linha 3, coluna 1, vazia"></button>
+            <button class="cell" type="button" data-index="7" aria-label="Linha 3, coluna 2, vazia"></button>
+            <button class="cell" type="button" data-index="8" aria-label="Linha 3, coluna 3, vazia"></button>
+          </div>
+        </section>
+
+        <div class="actions" aria-label="Controles da partida">
+          <button id="new-game" class="button button-primary" type="button">Nova partida</button>
+          <button id="reset-score" class="button button-secondary" type="button">Zerar placar</button>
+        </div>
+
+        <section id="replay-controls" class="replay" hidden aria-labelledby="replay-title">
+          <div>
+            <h2 id="replay-title">Máquina do Tempo</h2>
+            <p id="replay-description">Reveja as jogadas desta partida.</p>
+          </div>
+          <div class="replay-actions">
+            <button id="previous-move" class="button button-secondary" type="button">Jogada anterior</button>
+            <button id="next-move" class="button button-secondary" type="button">Próxima jogada</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="reset-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <form method="dialog" class="dialog-content">
+        <h2 id="dialog-title">Zerar o placar?</h2>
+        <p id="dialog-description">As vitórias e os empates acumulados serão apagados.</p>
+        <div class="dialog-actions">
+          <button id="cancel-reset" class="button button-secondary" value="cancel" type="submit">Cancelar</button>
+          <button id="confirm-reset" class="button button-danger" value="confirm" type="submit">Sim, zerar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
