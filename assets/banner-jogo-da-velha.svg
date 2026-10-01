@@ -1,0 +1,31 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Jogo da Velha — Máquina do Tempo</title>
+  <desc id="description">Banner colorido em tons de azul, rosa e ciano com um tabuleiro de jogo da velha futurista.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111744"/>
+      <stop offset=".52" stop-color="#342981"/>
+      <stop offset="1" stop-color="#075E79"/>
+    </linearGradient>
+    <radialGradient id="pink" cx="0" cy="0" r="1" gradientTransform="translate(1250 65) rotate(125) scale(420 420)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF76AC" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#FF76AC" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="520" rx="36" fill="url(#bg)"/>
+  <rect width="1600" height="520" rx="36" fill="url(#pink)"/>
+  <g opacity=".24" stroke="#B6FBFF"><path d="M0 98H1600M0 195H1600M0 292H1600M0 389H1600"/><path d="M108 0V520M310 0V520M512 0V520M714 0V520M916 0V520M1118 0V520M1320 0V520M1522 0V520"/></g>
+  <text x="110" y="142" fill="#B6FBFF" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="6">PROTOCOLO 03 × 03  ✦  SESSÃO LOCAL</text>
+  <text x="104" y="254" fill="#F6F7FF" font-family="Arial, sans-serif" font-size="84" font-weight="800">JOGO DA</text>
+  <text x="102" y="353" fill="#6DE6ED" font-family="Arial, sans-serif" font-size="108" font-weight="800" filter="url(#glow)">VELHA</text>
+  <text x="109" y="410" fill="#AFB8DC" font-family="Arial, sans-serif" font-size="27">Estratégia, memória e uma viagem no tempo a cada partida.</text>
+  <g transform="translate(1164 93)">
+    <rect x="-17" y="-17" width="330" height="330" rx="31" fill="#070B27" fill-opacity=".55" stroke="#B6FBFF" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M92 15V280M202 15V280M15 92H280M15 202H280" stroke="#9B8CFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M42 42L65 65M65 42L42 65" stroke="#FFB3CB" stroke-width="13" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="148" cy="148" r="28" stroke="#B6FBFF" stroke-width="13" filter="url(#glow)"/>
+    <path d="M232 232L257 257M257 232L232 257" stroke="#FFB3CB" stroke-width="13" stroke-linecap="round" filter="url(#glow)"/>
+  </g>
+  <circle cx="108" cy="454" r="5" fill="#FFE083"/><circle cx="132" cy="454" r="5" fill="#FF759F"/><circle cx="156" cy="454" r="5" fill="#6DE6ED"/>
+</svg>
